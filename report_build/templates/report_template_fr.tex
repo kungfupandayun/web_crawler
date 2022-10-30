@@ -1,0 +1,246 @@
+\documentclass[french]{article}
+
+
+
+% The default font size is 10pt; 11pt and 12pt are alternatives
+\input{templates/structure.tex} % Include the document which specifies all packages and structural customizations for this template
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	HEADER IMAGE
+%----------------------------------------------------------------------------------------
+
+% Title
+% -----
+\JournalName{\Huge\textbf {LETTRE D'INFORMATION SUR LES AMENDES RGPD  }}
+\noindent\HorRule{3pt} \\[-0.75\baselineskip]
+\HorRule{1pt}
+
+\vspace{0.5cm}
+	\SepRule
+\vspace{0.5cm}
+
+
+%General Statistic
+\NewsItem{\raggedright{\LARGE Amendes RGPD Sanctionnées en résumé}}
+\justify
+Le règlement nᵒ 2016/679, dit règlement général sur la protection des données, est un règlement de l'Union européenne qui constitue le texte de référence en matière de protection des données à caractère personnel. \\
+\textbf{\VAR{counter_nb_cases}} des amendes ont été infligées jusqu'à aujourd'hui.
+Le total cumulé des amendes pour la protection des données s'élève désormais à \textbf{\VAR{counter_sum}}.
+
+
+\begin{figure}
+	[H]\centering\includegraphics[width=0.7\linewidth]{graphs/top10_countries}
+      \caption{Top 10 des pays de l'UE avec le plus grand nombre d'amendes}
+\end{figure}
+\begin{figure}
+	[H]\centering\includegraphics[width=0.7\linewidth]{graphs/top10_countries_fines}
+	\caption{Top 10 des pays de l'UE avec la somme d'amendes la plus élevée}
+ \end{figure}
+
+
+\newpage
+
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1.0\linewidth]{graphs/sector_data}
+		\caption{Top 10 des secteurs avec le plus grand nombre d'amendes}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/sector_data_fines}
+		\caption{Top 10 des entreprises avec le plus grand nombre d'amendes}
+	 \end{figure}
+	
+	\end{multicols}
+	
+	
+	
+	\begin{figure}
+		[H]\centering\includegraphics[width=0.6\linewidth]{graphs/top10_controller}
+		\caption{Top 10 des entreprises avec le plus grand nombre d'amendes}
+	\end{figure}
+	
+	\begin{figure}
+		[H]\centering\includegraphics[width=0.6\linewidth]{graphs/top10_controller_fines}
+		\caption{Top 10 des entreprises avec le montant le plus élevé d'amendes}
+	 \end{figure}
+
+
+
+\newpage
+
+
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/top10_quoted} 
+		\caption{Top 5 des articles cités du RGPD avec le plus grand nombre d'amendes}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/top10_quoted_fines} 
+		\caption{Top 5 des articles  du RGPD avec le montant le plus élevé d'amendes}
+	\end{figure}
+	\end{multicols}
+	
+	
+	\NewsItem{\raggedright{\LARGE Analyse sur l'application du RGPD au fil des ans}}
+	\begin{figure}
+		[H]\centering\includegraphics[width=0.8\linewidth]{graphs/acc_nb_cases_graph}
+		\caption{Le nombre d'amendes (cumulatif) }
+	\end{figure}
+	
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1.0\linewidth]{graphs/SumOfFinesperYear}
+		\caption{La somme d'amende par an }
+	 \end{figure}
+\justify
+	L'application du RGPD s'est accélérée depuis les premières années, tant sur le nombre de cas d'exécution que sur la somme des amendes. La sensibilisation du public et la couverture médiatique de la vie privée et de la protection des données se sont également accrues au fil des ans. Cependant, le RGPD risque d'échouer. Selon une étude de Brave, cela est dû au fait que les autorités de protection des données (DPA) ne donnent pas suffisamment de ressources humaines et financières pour accomplir leurs tâches. Seuls 6 DPA nationaux disposent de plus de 10 enquêteurs techniques spécialisés. La moitié de toutes les APD nationales reçoivent de petits budgets annuels (5 millions d'euros ou moins) de leurs gouvernements.
+	\end{multicols}
+
+
+
+\newpage
+
+
+
+%Particular Year Statistic
+\NewsItem{\raggedright{\LARGE Amendes RGPD Sanctionnées en \VAR{year}}}
+
+	\begin{multicols}{2}
+	
+	En \VAR{year},  il y a eu \textbf{\VAR{counter_year_nb_cases}} amendes.
+	Le total cumulé des amendes de protection des données pour \VAR{year} se tient maintenant à \textbf{\VAR{counter_year_sum}}.
+	
+	\begin{figure}[H]
+	\centering\includegraphics[width=1\linewidth]{graphs/counter_year}
+	\end{figure}
+
+
+	Les amendes du RGPD pour \VAR{year} se résume pour chaque mois comme suit :
+
+	\begin{figure}
+	[H]\centering\includegraphics[width = 1.2\linewidth]{graphs/NbFinesPerMonth_year_graph}
+	\caption{Petit aperçu sur des mois \VAR{year}}
+	\end{figure}
+
+	\end{multicols}
+
+
+	\begin{figure}
+		[H]\centering\includegraphics[scale=.5]{graphs/top10_countries_year}
+		\caption{Top 10 des pays de l'UE avec le plus grand nombre d'amendes en \VAR{year}}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[scale=.5]{graphs/top10_countries_year_fines}
+		\caption{Top 10 des pays de l'UE avec la somme d'amendes la plus élevée en \VAR{year}}
+	\end{figure}
+
+\newpage
+\justify
+	\begin{multicols}{2}
+	\heading{3 amendes les plus récentes en \VAR{year}}{3 pt}
+		\begin{itemize}
+			\item \textbf{\VAR{new1_date}} \newline
+			\VAR{new1_fine}€ d'amende en \VAR{new1_country} pour \VAR{new1_controller}.
+			\newline
+			\VAR{new1_summary}
+			\newline
+			\href{\VAR{new1_link}}{Plus d'informations}
+			\vspace{1cm}
+	
+			\item \textbf{\VAR{new2_date}} \newline
+			\VAR{new2_fine}€ d'amende en \VAR{new2_country} pour \VAR{new2_controller}.
+			\newline
+			\VAR{new2_summary}
+			\newline
+			\href{\VAR{new2_link}}{Plus d'informations}
+			\vspace{1cm}
+	
+			\item \textbf{\VAR{new3_date}} \newline \VAR{new3_fine}€ d'amende en \VAR{new3_country} pour \VAR{new3_controller}
+			\newline
+			\VAR{new3_summary}
+			\newline
+			\href{\VAR{new3_link}}{Plus d'informations}
+		\end{itemize}
+	\end{multicols}
+
+\newpage
+\justify
+	\begin{multicols}{2}
+	\heading{Amendes notables en \VAR{year}}{3 pt}
+		\begin{itemize}
+			\item \textbf{La plus grosse amende} en \VAR{year} - \textbf{\VAR{largest_fine} €} a été condamné par \VAR{largest_fine_country} à \VAR{largest_fine_controller}.
+			\newline
+			\textbf{Résumé} : \VAR{largest_fine_summary}
+			\newline
+			\href{\VAR{largest_fine_link}}{Plus d'informations}
+			\vspace{1cm}
+		
+			\item \textbf{La plus petite amende} en \VAR{year} - \textbf{\VAR{lowest_fine} €} -  a été condamné par \VAR{lowest_fine_countries} à \VAR{lowest_fine_controller}.
+			\newline
+			\textbf{Résumé} : \VAR{lowest_fine_summary}
+			\newline
+			\href{\VAR{lowest_fine_link}}{Plus d'informations}
+		\end{itemize}
+	\end{multicols}
+
+
+\newpage
+
+	
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1.0\linewidth]{graphs/top10_controller_year}
+		\caption{Top 10 des entreprises avec le plus grand nombre d'amendes en\VAR{year}}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/top10_controller_year_fines}
+		\caption{Top 10 des entreprises avec le montant le plus élevé d'amendes en \VAR{year}}
+	 \end{figure}
+	
+	\end{multicols}
+
+
+		
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1.0\linewidth]{graphs/sector_data_year_fines}
+		\caption{Top 10 des secteurs avec le montant le plus élevé d'amendes\VAR{year}}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/sector_data_year}
+		\caption{Top 10 des secteurs avec le montant le plus élevé d'amendes\VAR{year}}
+	 \end{figure}
+	
+	\end{multicols}
+
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1.0\linewidth]{graphs/top10_quoted_year}
+		\caption{Top 5 des articles cités du RGPD avec le plus grand nombre d'amendes en \VAR{year}}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/top10_quoted_year_fines}
+		\caption{Top 5 des articles  du RGPD avec le montant le plus élevé d'amendes en \VAR{year}}
+	 \end{figure}
+	
+	\end{multicols}
+
+
+
+
+
+
+
+
+
+\vspace*{\fill}
+\textbf{Références:}\\
+\href{https://www.enforcementtracker.com}{https://www.enforcementtracker.com}\\
+\href{https://brave.com/wp-content/uploads/2020/04/Brave-2020-DPA-Report.pdf}{https://brave.com/wp-content/uploads/2020/04/Brave-2020-DPA-Report.pdf}\\
+\href{https://arxiv.org/pdf/2011.00946.pdf}{https://arxiv.org/pdf/2011.00946.pdf}
+
+
+\end{document}

@@ -1,0 +1,245 @@
+\documentclass[12pt]{article}
+
+
+% The default font size is 10pt; 11pt and 12pt are alternatives
+\input{templates/structure.tex} % Include the document which specifies all packages and structural customizations for this template
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	HEADER IMAGE
+%----------------------------------------------------------------------------------------
+
+% Title
+% -----
+\JournalName{\Huge\textbf {GDPR FINES NEWSLETTER}}
+\noindent\HorRule{3pt} \\[-0.75\baselineskip]
+\HorRule{1pt}
+
+\vspace{0.5cm}
+	\SepRule
+\vspace{0.5cm}
+
+
+%General Statistic
+\NewsItem{\raggedright{\LARGE GDPR Fines Overview}}
+\justify
+The General Data Protection Regulation 2016/679 is a regulation in EU law on data protection and privacy in the European Union and the European Economic Area. \\
+\textbf{\VAR{counter_nb_cases}} fines have been given out until today.
+The overall cumulative total of data protection fines now stands at \textbf{\VAR{counter_sum}}.
+
+
+\begin{figure}
+	[H]\centering\includegraphics[width=0.7\linewidth]{graphs/top10_countries}
+      \caption{Top 10 EU Countries with the highest number of fines }
+\end{figure}
+\begin{figure}
+	[H]\centering\includegraphics[width=0.7\linewidth]{graphs/top10_countries_fines}
+	\caption{Top 10 EU Countries with the highest sum of fines}
+ \end{figure}
+
+
+\newpage
+
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1.0\linewidth]{graphs/sector_data}
+		\caption{Top 10 Sectors on piechart with the highest number of fines}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/sector_data_fines}
+		\caption{Top 10 Sectors with the highest amount of fines}
+	 \end{figure}
+	
+	\end{multicols}
+	
+	
+	
+	\begin{figure}
+		[H]\centering\includegraphics[width=0.6\linewidth]{graphs/top10_controller}
+		\caption{Top 10 Companies with the highest number of fines}
+	\end{figure}
+	
+	\begin{figure}
+		[H]\centering\includegraphics[width=0.6\linewidth]{graphs/top10_controller_fines}
+		\caption{Top 10 Companies with the highest amount of fines}
+	 \end{figure}
+
+
+
+\newpage
+
+
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/top10_quoted} 
+		\caption{Top 5 Quoted Articles with the highest number of fines}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/top10_quoted_fines} 
+		\caption{Top 5  Quoted Articles with the highest amount of fines}
+	\end{figure}
+	\end{multicols}
+	
+	
+	\NewsItem{\raggedright{\LARGE Analysis on GDPR enforcement over years}}
+	\begin{figure}
+		[H]\centering\includegraphics[width=0.8\linewidth]{graphs/acc_nb_cases_graph}
+		\caption{Overall Number of Fines (cumulative) }
+	\end{figure}
+	
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1.0\linewidth]{graphs/SumOfFinesperYear}
+		\caption{Overall Amount of Fines per year }
+	 \end{figure}
+\justify
+	GDPR enforcement has accelerated since the first few years, both on the number of enforcement cases as well as the sum of fines. Public awareness and media coverage on privacy and data protection have increased over the years too. However, GDPR is at the risk of failing. According to a research from Brave, this is due to the Data Protection Authorities(DPA) not giving enough human and financial resources to perform their tasks. Only 6 national DPAs have more than 10 specialist tech investigation staff. Half of all national DPAs receive small (€5 million or less) annual budgets from their governments.
+	\end{multicols}
+
+
+
+\newpage
+
+
+
+%Particular Year Statistic
+\NewsItem{\raggedright{\LARGE GDPR fines overview in \VAR{year}}}
+
+	\begin{multicols}{2}
+	
+	In \VAR{year}, there have been \textbf{\VAR{counter_year_nb_cases}} fines.
+	The cumulative total of data protection fines for \VAR{year} now stands at \textbf{\VAR{counter_year_sum}}.
+	
+	\begin{figure}[H]
+	\centering\includegraphics[width=1\linewidth]{graphs/counter_year}
+	\end{figure}
+
+
+	The GPDR fines for \VAR{year} break down for each months as follow :
+
+	\begin{figure}
+	[H]\centering\includegraphics[width = 1.2\linewidth]{graphs/NbFinesPerMonth_year_graph}
+	\caption{Small Overview over months in \VAR{year}}
+	\end{figure}
+
+	\end{multicols}
+
+
+	\begin{figure}
+		[H]\centering\includegraphics[scale=.5]{graphs/top10_countries_year}
+		\caption{Top 10 EU Countries with the highest number of fines in \VAR{year}}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[scale=.5]{graphs/top10_countries_year_fines}
+		\caption{Top 10 EU Countries with the highest sum of fines in \VAR{year}}
+	\end{figure}
+
+\newpage
+\justify
+	\begin{multicols}{2}
+	\heading{3 most recent fines in \VAR{year}}{3 pt}
+		\begin{itemize}
+			\item \textbf{\VAR{new1_date}} \newline
+			\VAR{new1_fine}€ fine issued in \VAR{new1_country} to \VAR{new1_controller}.
+			\newline
+			\VAR{new1_summary}
+			\newline
+			\href{\VAR{new1_link}}{More Info}
+			\vspace{1cm}
+	
+			\item \textbf{\VAR{new2_date}} \newline
+			\VAR{new2_fine}€ fine issued in \VAR{new2_country} to \VAR{new2_controller}.
+			\newline
+			\VAR{new2_summary}
+			\newline
+			\href{\VAR{new2_link}}{More Info}
+			\vspace{1cm}
+	
+			\item \textbf{\VAR{new3_date}} \newline \VAR{new3_fine}€ fine issued in \VAR{new3_country} to \VAR{new3_controller}
+			\newline
+			\VAR{new3_summary}
+			\newline
+			\href{\VAR{new3_link}}{More Info}
+		\end{itemize}
+	\end{multicols}
+
+\newpage
+\justify
+	\begin{multicols}{2}
+	\raggedright\heading{Notable fines in \VAR{year}}{3 pt}
+		\begin{itemize}
+			\item The \textbf{largest} fine of \VAR{year} - \textbf{\VAR{largest_fine} €} - was issued in \VAR{largest_fine_country} to \VAR{largest_fine_controller}.
+			\newline
+			\textbf{Summary} : \VAR{largest_fine_summary}
+			\newline
+			\href{\VAR{largest_fine_link}}{More info}
+			\vspace{1cm}
+		
+			\item The \textbf{lowest} fine of \VAR{year} - \textbf{\VAR{lowest_fine} €} - was issued in \VAR{lowest_fine_countries} to \VAR{lowest_fine_controller}.
+			\newline
+			\textbf{Summary} : \VAR{lowest_fine_summary}
+			\newline
+			\href{\VAR{lowest_fine_link}}{More info}
+		\end{itemize}
+	\end{multicols}
+
+
+\newpage
+
+	
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1.0\linewidth]{graphs/top10_controller_year}
+		\caption{Top 10 Companies with the highest number of fines in \VAR{year}}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/top10_controller_year_fines}
+		\caption{Top 10 Companies with the highest  amount of fines in \VAR{year}}
+	 \end{figure}
+	
+	\end{multicols}
+
+
+		
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1.0\linewidth]{graphs/sector_data_year_fines}
+		\caption{Top 10 Sectors on piechart with the highest number of fines in \VAR{year}}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/sector_data_year}
+		\caption{Top 10 Sectors with the highest amount of fines in \VAR{year}}
+	 \end{figure}
+	
+	\end{multicols}
+
+	\begin{multicols}{2}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1.0\linewidth]{graphs/top10_quoted_year}
+		\caption{Top 10 Quoted Article with the highest number of fines in \VAR{year}}
+	\end{figure}
+	\begin{figure}
+		[H]\centering\includegraphics[width=1\linewidth]{graphs/top10_quoted_year_fines}
+		\caption{Top 10 Quoted Article with the highest amount of fines in \VAR{year}}
+	 \end{figure}
+	
+	\end{multicols}
+
+
+
+
+
+
+
+
+
+\vspace*{\fill}
+\textbf{References:}\\
+\href{https://www.enforcementtracker.com}{https://www.enforcementtracker.com}\\
+\href{https://brave.com/wp-content/uploads/2020/04/Brave-2020-DPA-Report.pdf}{https://brave.com/wp-content/uploads/2020/04/Brave-2020-DPA-Report.pdf}\\
+\href{https://arxiv.org/pdf/2011.00946.pdf}{https://arxiv.org/pdf/2011.00946.pdf}
+
+
+\end{document}
